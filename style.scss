@@ -1,0 +1,70 @@
+$lightColor: #F3EED9;
+$darkColor: #222C2A;
+$accentColor: #824936;
+
+$primaryFont: 'Roboto', sans-serif;
+$accentFont: 'Playfair Display', serif;
+
+body {
+    font-family: $primaryFont;
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+body, h1, h2, p {
+    margin: 0;
+}
+
+h1, h2 {
+font-family: $accentFont;
+line-height: 1;
+font-weight: 900;
+}
+
+h2, p { 
+margin-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header, section {
+    padding: 3rem 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: 90%;
+    max-width: 70.5rem;
+}
+
+header .container {
+    max-width: 50rem;
+}
+
+.bg-light {
+    background-color: $lightColor;
+}
+
+.bg-dark {
+    background-color: $darkColor;
+    color: white;
+    h2 {
+        color: $lightColor;
+    }
+}
+
+.bg-accent {
+    background-color: $accentColor;
+    color: white;
+    h2 {
+        color: $lightColor;
+    }
+}
