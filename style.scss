@@ -17,6 +17,7 @@ body, h1, h2, p {
 }
 
 h1, h2 {
+color: $accentColor;
 font-family: $accentFont;
 line-height: 1;
 font-weight: 900;
@@ -43,6 +44,23 @@ header, section {
     margin-inline: auto;
     width: 90%;
     max-width: 70.5rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+    .split > * {
+        flex-basis: 100%;
+    }
+    .split > * + * {
+        margin-left: 2em;
+    }
 }
 
 header .container {
